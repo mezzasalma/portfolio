@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+#root {
+  @apply flex flex-col h-full relative;
+}
+
+.CTA__circle {
+  @apply transition-all border-t-2 border-l-2 border-b-[0.5px] border-r;
+}
+
+.CTA__circle:hover {
+  @apply rotate-90;
+  /*border-t-2 border-b-2 border-l-[0.5px] border-r*/
+}
+
+.BigText__container {
+  @apply fixed left-1/2 -translate-x-1/2 -bottom-[10vh] leading-none pointer-events-none -z-10;
+}
+
+.BigText__text {
+  /*  FIXME : find solution to be transparent */
+  color: white;
+  font-weight: bold;
+  font-size: 28vw;
+  /*
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.40);
+  */
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.40), 1px -1px 0 rgba(0, 0, 0, 0.40), -1px 1px 0 rgba(0, 0, 0, 0.40), 1px 1px 0 rgba(0, 0, 0, 0.40);
+}
+
+h1 {
+  @apply text-50;
+}
+
+h2 {
+  @apply text-50 font-bold;
+}
+
+a {
+  @apply relative block px-3 py-1;
+  border-radius: 100%;
+}
+
+a::before {
+  @apply content-[''] absolute top-0 left-0 w-full h-full blur;
+  z-index: -1;
+  border-radius: 100%;
+}
+
+a:hover::before {
+  @apply bg-secondary;
+}

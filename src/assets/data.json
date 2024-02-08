@@ -1,0 +1,20 @@
+{
+  "website": {
+    "title": "Portfolio - Maëva Mezzasalma",
+    "description": "Développeuse 25 ans, alliant 3 ans d'alternance et 13 ans de danse. Diplômée des Gobelins, cherche poste Front end pour développer créativité et compétences."
+  },
+  "menu": [
+    "Accueil",
+    "Projets",
+    "Contact"
+  ],
+  "presentation": "À 25 ans, je suis une développeuse fusionnant 3 années d'alternance avec 13 années de pratique en danse classique et contemporaine, animée par l'exploration de l'intersection entre l'art, le mouvement humain et les technologies émergentes.<br/>Après un apprentissage chez nother.io avec Bertrand Candas, je cultive une curiosité pour la conception d'expériences intuitives et interactives.<br/>Fraîchement diplômée d'un Master Expert en Création Numérique Interactive des Gobelins, je suis à la recherche d'un poste de développeuse front end où je pourrais contribuer à la conception tout en développant mes compétences en animation web 2D/3D et en nourrissant ma créativité.",
+  "images":[
+    {"src":"Fichier 1.jpeg", "alt": ""},
+    {"src":"Fichier 2.jpeg", "alt": ""},
+    {"src":"Fichier 3.jpeg", "alt": ""},
+    {"src":"Fichier 4.jpeg", "alt": ""}
+  ],
+  "createdBy": "Marjorie Guillou",
+  "realisedBy": "Maëva Mezzasalma"
+}
