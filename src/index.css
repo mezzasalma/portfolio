@@ -11,6 +11,45 @@ body {
   @apply flex flex-col h-full relative;
 }
 
+.Container {
+  @apply container mx-auto px-6 sm:px-0;
+}
+
+h1 {
+  @apply text-20 sm:text-50;
+}
+
+h2 {
+  @apply text-20 sm:text-50 font-bold;
+}
+
+a, span, strong, p {
+  @apply text-12 sm:text-16;
+}
+
+a {
+  @apply relative block px-3 py-1;
+  border-radius: 100%;
+}
+
+a::before {
+  @apply content-[''] absolute top-0 left-0 w-full h-full bg-secondary blur scale-0 transition-transform;
+  z-index: -1;
+  border-radius: 100%;
+}
+
+a:hover::before {
+  @apply scale-100;
+}
+
+.StyledList > li{
+  @apply flex justify-center items-center;
+}
+
+.StyledList > li:not(:last-child)::after {
+  @apply content-[''] block h-1 sm:h-[0.5px] w-1 sm:w-10 bg-black rounded-full;
+}
+
 .CTA__circle {
   @apply transition-all border-t-2 border-l-2 border-b-[0.5px] border-r;
 }
@@ -21,7 +60,7 @@ body {
 }
 
 .BigText__container {
-  @apply fixed left-1/2 -translate-x-1/2 -bottom-[10vh] leading-none pointer-events-none -z-10;
+  @apply fixed left-1/2 -translate-x-1/2 -bottom-[3vh] sm:-bottom-[10vh] leading-none pointer-events-none -z-10;
 }
 
 .BigText__text {
@@ -34,27 +73,4 @@ body {
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.40);
   */
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.40), 1px -1px 0 rgba(0, 0, 0, 0.40), -1px 1px 0 rgba(0, 0, 0, 0.40), 1px 1px 0 rgba(0, 0, 0, 0.40);
-}
-
-h1 {
-  @apply text-50;
-}
-
-h2 {
-  @apply text-50 font-bold;
-}
-
-a {
-  @apply relative block px-3 py-1;
-  border-radius: 100%;
-}
-
-a::before {
-  @apply content-[''] absolute top-0 left-0 w-full h-full blur;
-  z-index: -1;
-  border-radius: 100%;
-}
-
-a:hover::before {
-  @apply bg-secondary;
 }

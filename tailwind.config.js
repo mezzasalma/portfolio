@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        50: '3.1rem',
-        20: '1.25rem'
+        12: '0.75rem',
+        16: '1rem',
+        20: '1.25rem',
+        50: '3.1rem'
       }, 
       colors: {
         primary: "#E94D77",
