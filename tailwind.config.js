@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        'pilowlava': 'Pilowlava'
+      },
       fontSize: {
         12: '0.75rem',
         16: '1rem',
         20: '1.25rem',
+        32: '2.0rem',
         50: '3.1rem'
       }, 
       colors: {
@@ -20,4 +24,3 @@ export default {
   },
   plugins: [],
 }
-

@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+@font-face {
+  font-family: "Pilowlava";
+  src:
+    local("Pilowlava"),
+    url("src/assets/fonts/Pilowlava-Regular.woff") format("woff"),
+    url("src/assets/fonts/Pilowlava-Regular.woff2") format("woff2")
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: 'Manrope', sans-serif;
+  @apply font-extralight;
 }
 
 #root {
@@ -12,65 +22,88 @@ body {
 }
 
 .Container {
-  @apply container mx-auto px-6 sm:px-0;
+  @apply container mx-auto px-6 sm:px-0 my-5 sm:my-10;
 }
 
 h1 {
-  @apply text-20 sm:text-50;
+  @apply text-20 sm:text-32 lg:text-50;
 }
 
 h2 {
-  @apply text-20 sm:text-50 font-bold;
+  @apply text-16 sm:text-20;
 }
 
-a, span, strong, p {
+a,
+span,
+strong,
+p,
+li {
   @apply text-12 sm:text-16;
 }
 
-a {
+header a,
+footer a {
   @apply relative block px-3 py-1;
   border-radius: 100%;
 }
 
-a::before {
+header a::before,
+footer a::before {
   @apply content-[''] absolute top-0 left-0 w-full h-full bg-secondary blur scale-0 transition-transform;
   z-index: -1;
   border-radius: 100%;
 }
 
-a:hover::before {
+header a:hover::before,
+footer a:hover::before {
   @apply scale-100;
 }
 
-.StyledList > li{
+footer>a,
+footer>span {
+  @apply text-12;
+}
+
+.StyledList>li {
   @apply flex justify-center items-center;
 }
 
-.StyledList > li:not(:last-child)::after {
+.StyledList>li:not(:last-child)::after {
   @apply content-[''] block h-1 sm:h-[0.5px] w-1 sm:w-10 bg-black rounded-full;
 }
 
+.Button {
+  @apply transition-all -m-2 rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r px-4 py-2;
+}
+
+.Button:hover {
+  @apply border-t-[0.5px] border-b-2 border-r-2 border-l;
+}
+
 .CTA__circle {
-  @apply transition-all border-t-2 border-l-2 border-b-[0.5px] border-r;
+  @apply relative transition-all rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r -m-2;
+}
+
+.CTA__circle::after {
+  @apply content-[''] block absolute -top-0.5 left-1 w-full h-full rounded-full border border-primary;
 }
 
 .CTA__circle:hover {
-  @apply rotate-90;
-  /*border-t-2 border-b-2 border-l-[0.5px] border-r*/
+  @apply border-r-2 border-b-2 border-t-[0.5px] border-l;
 }
 
 .BigText__container {
-  @apply fixed left-1/2 -translate-x-1/2 -bottom-[3vh] sm:-bottom-[10vh] leading-none pointer-events-none -z-10;
+  @apply fixed left-1/2 -translate-x-1/2 -bottom-[1vh] sm:-bottom-[5vh] leading-none pointer-events-none -z-10;
 }
 
 .BigText__text {
   /*  FIXME : find solution to be transparent */
   color: white;
   font-weight: bold;
-  font-size: 28vw;
+  font-size: 16vw;
   /*
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.40);
   */
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.40), 1px -1px 0 rgba(0, 0, 0, 0.40), -1px 1px 0 rgba(0, 0, 0, 0.40), 1px 1px 0 rgba(0, 0, 0, 0.40);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.10), 1px -1px 0 rgba(0, 0, 0, 0.10), -1px 1px 0 rgba(0, 0, 0, 0.10), 1px 1px 0 rgba(0, 0, 0, 0.10);
 }

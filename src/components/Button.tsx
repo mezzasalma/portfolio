@@ -16,7 +16,8 @@ interface ConditionalWrapperProps {
 
 function Button({ children, type, link }: ButtonProps) {
 
-    const ConditionalWrapper: React.FC<ConditionalWrapperProps> = ({ condition, wrapper, children }) => (condition ? wrapper(children) : <button className="px-6 py-3.5 rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r">{children}</button>);
+    const ConditionalWrapper: React.FC<ConditionalWrapperProps> = ({ condition, wrapper, children }) =>
+        (condition ? wrapper(children) : <button className='Button'>{children}</button>);
 
     {/*
      const ApplyWrappers = ({ wrappers, children }) => {
@@ -38,7 +39,8 @@ function Button({ children, type, link }: ButtonProps) {
     */}
 
     return (
-        <ConditionalWrapper children={children} condition={link ? true : false} wrapper={(children) => <a href={link} target={type === 'external' ? '_blank' : '_self'} className="px-6 py-3.5 rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r">{children}</a>}></ConditionalWrapper>
+        <ConditionalWrapper children={children} condition={link ? true : false} wrapper={(children) =>
+            <a href={link} target={type === 'external' ? '_blank' : '_self'} className='Button whitespace-nowrap'>{children}</a>} />
     )
 }
 
