@@ -37,7 +37,6 @@ function Accordion({ items, className }: AccordionProps) {
     contents.forEach((content) => {
       h.push(content.scrollHeight)
     })
-    console.log('resize', h[0])
     setContentsHeight(h)
   }
 
@@ -83,7 +82,6 @@ function Accordion({ items, className }: AccordionProps) {
         //markers: true,
         start: "top 75%",
         end: "bottom 75%",
-        onToggle: (self) => console.log("toggled, isActive:", self.isActive),
         onEnter: () => animatePanels()
       });
     }
