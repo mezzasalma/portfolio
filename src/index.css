@@ -4,8 +4,9 @@
   font-family: "Pilowlava";
   src:
     local("Pilowlava"),
-    url("src/assets/fonts/Pilowlava-Regular.woff") format("woff"),
-    url("src/assets/fonts/Pilowlava-Regular.woff2") format("woff2")
+    url("./assets/fonts/Pilowlava-Regular.ttf") format("ttf"),
+    url("./assets/fonts/Pilowlava-Regular.woff") format("woff"),
+    url("./assets/fonts/Pilowlava-Regular.woff2") format("woff2")
 }
 
 @tailwind base;
@@ -14,7 +15,7 @@
 
 body {
   font-family: 'Manrope', sans-serif;
-  @apply font-extralight;
+  @apply font-extralight scroll-smooth;
 }
 
 #root {
