@@ -13,15 +13,18 @@ interface AccordionItem {
   opportunity: string,
   content: string,
   technos: string,
-  website: string
+  website: string,
+  image: string
 }
 
 interface AccordionProps {
   items: AccordionItem[],
-  className?: string
+  className?: string,
+  mouseEnter: (index:number)=>void,
+  mouseLeave: (index:number)=>void
 }
 
-function Accordion({ items, className }: AccordionProps) {
+function Accordion({ items, className, mouseEnter, mouseLeave }: AccordionProps) {
 
   const handleClick = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -33,7 +36,7 @@ function Accordion({ items, className }: AccordionProps) {
 
   const resize = () => {
     const contents = document.querySelectorAll('.Accordion__content');
-    const h:number[] = []
+    const h: number[] = []
     contents.forEach((content) => {
       h.push(content.scrollHeight)
     })
@@ -50,7 +53,7 @@ function Accordion({ items, className }: AccordionProps) {
   }, [])
 
 
-  // Panel animation on Enter
+  // Panel animation on enter window
   const container = useRef<HTMLDivElement>(null);
 
   const animatePanels = () => {
@@ -94,30 +97,35 @@ function Accordion({ items, className }: AccordionProps) {
   }, [])
 
   return (
-    <div ref={container} className={`${className} Accordion flex flex-col divide-y divide-black transition-all`}>
-      {items.map((item: AccordionItem, index: number) =>
-        <div key={index} className='Accordion__item transition-all overflow-hidden hover:bg-gradient-to-r hover:from-secondary hover:to-transparent '>
-          <div onClick={() => handleClick(index)} className="Accordion__title flex justify-between items-center gap-6 p-3">
-            <h2>{item.title}</h2>
-            {item.website ? <Button type="external" link={item.website}>See website</Button> : ''}
-          </div>
-          <div className={`Accordion__content flex flex-col gap-6 origin-top transition-all duration-500 px-3`}
-            style={{ height: index === activeIndex ? heights[index] + 'px' : 0 }}>
-            {item.content ? <p dangerouslySetInnerHTML={{ __html: item.content }} /> : ''}
-            <div className="grid grid-cols-2 pb-3">
-              <strong>Realised</strong>
-              <span>{item.completed}</span>
-              <strong>Done with</strong>
-              <span>{item.with}</span>
-              <strong>Done for</strong>
-              <span>{item.for}</span>
-              <strong>Technologies</strong>
-              <span>{item.technos}</span>
+    <>
+
+      <div ref={container} className={`${className} Accordion flex flex-col divide-y divide-black transition-all`}>
+        {items.map((item: AccordionItem, index: number) =>
+          <div key={index} className='Accordion__item transition-all overflow-hidden hover:bg-gradient-to-r hover:from-secondary hover:to-transparent '
+            onMouseEnter={() => mouseEnter(index)}
+            onMouseLeave={() => mouseLeave(index)}>
+            <div onClick={() => handleClick(index)} className="Accordion__title flex justify-between items-center gap-6 p-3">
+              <h2>{item.title}</h2>
+              {item.website ? <Button type="external" link={item.website}>See website</Button> : ''}
+            </div>
+            <div className={`Accordion__content flex flex-col gap-6 origin-top transition-all duration-500 px-3`}
+              style={{ height: index === activeIndex ? heights[index] + 'px' : 0 }}>
+              {item.content ? <p dangerouslySetInnerHTML={{ __html: item.content }} /> : ''}
+              <div className="grid grid-cols-2 pb-3">
+                <strong>Realised</strong>
+                <span>{item.completed}</span>
+                <strong>Done with</strong>
+                <span>{item.with}</span>
+                <strong>Done for</strong>
+                <span>{item.for}</span>
+                <strong>Technologies</strong>
+                <span>{item.technos}</span>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   )
 }
 

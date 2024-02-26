@@ -15,7 +15,8 @@
       "opportunity": "2023 - Projet de fin d'études - Gobelins",
       "content": "Projet de fin détudes. Outil numérique à destination des instituteurs d'école primaire pour apprendre tout en suivant le cycle annuel des saisons à travers la gestion d'un potager. Le projet se concentre sur une histoire interactive comme activité principale. Il comprend également un outil de gestion pour faciliter la répartition des tâches, un système de badges missions attribués aux élèves pour les responsabilisés, et un carnet de bord pour documenter l'activité de la classe dans le jardin.",
       "technos": "VueJS - Pocketbase - Teachable Machine - Socket.io - Tailwind",
-      "website": ""
+      "website": "",
+      "image": "57340001.JPG"
     },
     {
       "title": "Manifeste de la créativité digitale AACC",
@@ -25,7 +26,8 @@
       "opportunity": "",
       "content": "Petites expériences à scanner interactives autour de différentes thématiques.",
       "technos": "WordPress - TensorFlow - R3F - Framer Motion - GSAP",
-      "website": "https://manifeste.aacc.fr/"
+      "website": "https://manifeste.aacc.fr/",
+      "image": "57340009.JPG"
     },
     {
       "title": "Runner Verfora",
@@ -35,7 +37,8 @@
       "opportunity": "",
       "content": "Jeu concours de type runner non public. 8 personnages à sélectionner, 3 paths, obstacles à éviter, objets à collecter, ordre d'apparition des blocs aléatoire, notion de physique, score, formulaire de participation.",
       "technos": "ThreeJS",
-      "website": ""
+      "website": "",
+      "image": "57340011.JPG"
     },
     {
       "title": "MNSTR",
@@ -45,7 +48,8 @@
       "opportunity": "",
       "content": "Refonte du portfolio.",
       "technos": "Next - Framer Motion - GSAP",
-      "website": "https://www.mnstr.com"
+      "website": "https://www.mnstr.com",
+      "image": "63070004.JPG"
     },
     {
       "title": "Tunnel d'achat In&motion",
@@ -55,7 +59,8 @@
       "opportunity": "",
       "content": "Refonte du tunnel d’achat.",
       "technos": "Next - Framer Motion - GSAP",
-      "website": "https://www.inemotion.com"
+      "website": "https://www.inemotion.com",
+      "image": ""
     },
     {
       "title": "Byrne",
@@ -65,7 +70,8 @@
       "opportunity": "",
       "content": "Refonte du site Byrne avec une présentation détaillée de sa collection et la possibilité pour les visiteurs de prévisualiser la personnalisation des montres. Les utilisateurs peuvent modifier divers éléments tels que le cadran, la couleur, le bracelet, les chiffres, et plus encore.",
       "technos": "Nuxt - Tailwind - PixiJS - GSAP - Locomotive Scroll",
-      "website": ""
+      "website": "",
+      "image": ""
     },
     {
       "title": "Application Whergo",
@@ -75,7 +81,8 @@
       "opportunity": "",
       "content": "Digitalisation de leur méthode \"REPERES\". Génération de statistiques.",
       "technos": "Next - Firebase",
-      "website": "https://www.mnstr.com"
+      "website": "https://www.mnstr.com",
+      "image": ""
     },
     {
       "title": "Everide",
@@ -85,7 +92,8 @@
       "opportunity": "2021 - Premier projet avec nother.io",
       "content": "Site & Application pour la revente entre particuliers de vêtements et matériels de sport ourtdoor.",
       "technos": "Nuxt - Tailwind",
-      "website": "https://www.everide.app/fr/"
+      "website": "https://www.everide.app/fr/",
+      "image": ""
     }
   ],
   "experiences": [
