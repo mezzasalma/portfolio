@@ -23,11 +23,18 @@ body {
 }
 
 .Container {
-  @apply container mx-auto px-6 sm:px-0 my-5 sm:my-10;
+  @apply container mx-auto px-6 sm:px-0 my-10 sm:my-20;
 }
 
 h1 {
-  @apply text-20 sm:text-32 lg:text-50;
+  @apply relative block text-32 sm:text-50 lg:text-70 lg:leading-tight;
+  /*@apply text-20 sm:text-32 lg:text-50;*/
+}
+
+h1::before {
+  @apply absolute content-[''] w-2/3 h-2/3 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary blur-3xl;
+  z-index: -1;
+  border-radius: 100%;
 }
 
 h2 {
@@ -42,27 +49,24 @@ li {
   @apply text-12 sm:text-16;
 }
 
-header a,
-footer a {
+footer a,
+footer span{
+  @apply text-12;
+}
+
+.StyledList a {
   @apply relative block px-3 py-1;
   border-radius: 100%;
 }
 
-header a::before,
-footer a::before {
+.StyledList a::before {
   @apply content-[''] absolute top-0 left-0 w-full h-full bg-secondary blur scale-0 transition-transform;
   z-index: -1;
   border-radius: 100%;
 }
 
-header a:hover::before,
-footer a:hover::before {
+.StyledList a:hover::before {
   @apply scale-100;
-}
-
-footer>a,
-footer>span {
-  @apply text-12;
 }
 
 .StyledList>li {
@@ -81,15 +85,17 @@ footer>span {
   @apply border-t-[0.5px] border-b-2 border-r-2 border-l;
 }
 
-.CTA__circle {
+.CTA__home {
   @apply relative transition-all rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r -m-2;
 }
 
-.CTA__circle::after {
+/*
+.CTA__home::after {
   @apply content-[''] block absolute -top-0.5 left-1 w-full h-full rounded-full border border-primary;
 }
+*/
 
-.CTA__circle:hover {
+.CTA__home:hover {
   @apply border-r-2 border-b-2 border-t-[0.5px] border-l;
 }
 
@@ -98,13 +104,15 @@ footer>span {
 }
 
 .BigText__text {
+  @apply text-secondary opacity-50 text-[16vw];
   /*  FIXME : find solution to be transparent */
-  color: white;
-  font-weight: bold;
-  font-size: 16vw;
   /*
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.40);
-  */
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.10), 1px -1px 0 rgba(0, 0, 0, 0.10), -1px 1px 0 rgba(0, 0, 0, 0.10), 1px 1px 0 rgba(0, 0, 0, 0.10);
+  */
+}
+
+.Accordion__item:hover {
+  @apply bg-gradient-to-r from-secondary to-transparent;
 }

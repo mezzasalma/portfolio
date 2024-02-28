@@ -3,7 +3,7 @@
     "title": "Portfolio - Maëva Mezzasalma",
     "description": "Développeuse 25 ans, alliant 3 ans d'alternance et 13 ans de danse. Diplômée des Gobelins, cherche poste Front end pour développer créativité et compétences."
   },
-  "title": "Front-End Developper",
+  "title": "Creative &<br/>Front-End<br/>Developper",
   "presentation": "<p>Enchantée, Maëva</p><p>Fraîchement diplômée d'un Master Expert en Création Numérique Interactive des Gobelins, je suis à la recherche d'un poste de développeuse front end où je pourrais contribuer à la conception tout en développant mes compétences en animation web 2D/3D et en nourrissant ma créativité.</p><p>Après un apprentissage chez nother.io, je cultive une curiosité pour la conception d'expériences intuitives et interactives. </p>",
   "technologies": ["React", "Vue", "Tailwind", "GSAP", "Framer Motion", "ThreeJS", "PixiJS"],
   "projects": [

@@ -37,7 +37,7 @@ function InfiniteText({ className, texts }: InfiniteProps) {
         x: 0
       }, {
         x: - width,
-        duration: Math.floor(Math.random() * 5) + 5,
+        duration: Math.floor(Math.random() * 5) + 10,
         repeat: -1,
         ease: 'none'
       })

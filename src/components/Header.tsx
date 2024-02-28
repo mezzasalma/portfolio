@@ -10,19 +10,25 @@ function Header() {
             gsap.to(window, {
                 scrollTo: { y: anchor, offsetY: 100 }
             });
+        } else {
+            gsap.to(window, {
+                scrollTo: { y: 0, offsetY: 100 }
+            });
         }
     }
 
     //  <span className="h-2 sm:h-[0.5px] w-2 sm:w-10 bg-black rounded-full"></span>
     return (
-        <header className="container mx-auto p-6 sm:px-0 sticky top-0 flex justify-between items-center bg-gradient-to-b from-white to-transparent z-10">
-            <span className="CTA__circle w-10 sm:w-20 aspect-square flex justify-center items-center font-pilowlava">MM</span>
-            <ul className="StyledList flex flex-wrap justify-end items-center sm:gap-2">
-                <li><a onClick={(e) => scrollTo(e)} href="#presentation">Maëva</a></li>
-                <li><a onClick={(e) => scrollTo(e)} href="#projects">Projets</a></li>
-                <li><a onClick={(e) => scrollTo(e)} href="#experiences">Experiences</a></li>
-                <li><a onClick={(e) => scrollTo(e)} href="#footer">Contact</a></li>
-            </ul>
+        <header className="sticky top-0 bg-gradient-to-b from-white to-transparent z-10">
+            <div className="container mx-auto p-6 sm:px-0 flex justify-between items-center ">
+                <a onClick={(e) => scrollTo(e)}className="CTA__home w-10 sm:w-20 h-12 flex justify-center items-center font-pilowlava px-8">MM</a>
+                <ul className="StyledList flex flex-wrap justify-end items-center sm:gap-2">
+                    {/*<li><a onClick={(e) => scrollTo(e)} href="#presentation">Maëva</a></li>*/}
+                    <li><a onClick={(e) => scrollTo(e)} href="#projects">Projets</a></li>
+                    <li><a onClick={(e) => scrollTo(e)} href="#experiences">Experiences</a></li>
+                    <li><a onClick={(e) => scrollTo(e)} href="#footer">Contact</a></li>
+                </ul>
+            </div>
         </header>
     )
 }

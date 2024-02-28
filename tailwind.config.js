@@ -14,7 +14,8 @@ export default {
         16: '1rem',
         20: '1.25rem',
         32: '2.0rem',
-        50: '3.1rem'
+        50: '3.1rem',
+        70: '4.5rem'
       }, 
       colors: {
         primary: "#E94D77",

@@ -96,7 +96,7 @@ function Accordion({ items, className }: AccordionProps) {
   return (
     <div ref={container} className={`${className} Accordion flex flex-col divide-y divide-black transition-all`}>
       {items.map((item: AccordionItem, index: number) =>
-        <div key={index} className='Accordion__item transition-all overflow-hidden hover:bg-gradient-to-r hover:from-secondary hover:to-transparent '>
+        <div key={index} className='Accordion__item transition-all overflow-hidden'>
           <div onClick={() => handleClick(index)} className="Accordion__title flex justify-between items-center gap-6 p-3">
             <h2>{item.title}</h2>
             {item.website ? <Button type="external" link={item.website}>See website</Button> : ''}
