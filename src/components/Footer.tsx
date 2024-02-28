@@ -7,7 +7,7 @@ function Footer() {
                 alt="Portrait de Maëva Mezzasalma réalisé par Romain Quiblier" />
             </div>
             <ul className="col-span-12 StyledList flex flex-wrap justify-center items-center gap-2 ">
-                <li><a href="public/images/" download>CV</a></li>
+                <li><a href="CV_Mezzasalma.pdf" download>CV</a></li>
                 <li><a href="https://www.linkedin.com/in/maëva-mezzasalma/">Linkedin</a></li>
                 <li><a href="mailto:maeva.mezza38@gmail.com">Contact</a></li>
                 <li><span>Maëva Mezzasalma</span></li>
