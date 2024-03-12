@@ -78,7 +78,7 @@ footer span{
 }
 
 .Button {
-  @apply transition-all -m-2 rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r px-4 py-2;
+  @apply flex items-center gap-2 border-black border-t-2 border-l-2 border-b-[0.5px] border-r rounded-full whitespace-nowrap -m-2 px-4 py-2 transition-all;
 }
 
 .Button:hover {
@@ -88,19 +88,17 @@ footer span{
 .CTA__home {
   @apply relative transition-all rounded-full border-black border-t-2 border-l-2 border-b-[0.5px] border-r -m-2;
 }
-
 /*
 .CTA__home::after {
   @apply content-[''] block absolute -top-0.5 left-1 w-full h-full rounded-full border border-primary;
 }
 */
-
 .CTA__home:hover {
   @apply border-r-2 border-b-2 border-t-[0.5px] border-l;
 }
 
 .BigText__container {
-  @apply fixed left-1/2 -translate-x-1/2 -bottom-[1vh] sm:-bottom-[5vh] leading-none pointer-events-none -z-10;
+  @apply fixed left-1/2 -translate-x-1/2 -bottom-[2vh] sm:-bottom-[5vh] leading-none pointer-events-none -z-10;
 }
 
 .BigText__text {
@@ -113,6 +111,11 @@ footer span{
   */
 }
 
-.Accordion__item:hover {
-  @apply bg-gradient-to-r from-secondary to-transparent;
+.Accordion__item::before {
+  @apply absolute content-[''] top-0 left-0 w-full h-full bg-gradient-to-r from-secondary to-transparent transition-transform origin-left duration-500 scale-x-0;
+  z-index: -1;
+}
+
+.Accordion__item:hover::before {
+  @apply scale-x-100;
 }

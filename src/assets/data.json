@@ -4,19 +4,9 @@
     "description": "Développeuse 25 ans, alliant 3 ans d'alternance et 13 ans de danse. Diplômée des Gobelins, cherche poste Front end pour développer créativité et compétences."
   },
   "title": "Creative &<br/>Front-End<br/>Developper",
-  "presentation": "<p>Enchantée, Maëva</p><p>Fraîchement diplômée d'un Master Expert en Création Numérique Interactive des Gobelins, je suis à la recherche d'un poste de développeuse front end où je pourrais contribuer à la conception tout en développant mes compétences en animation web 2D/3D et en nourrissant ma créativité.</p><p>Après un apprentissage chez nother.io, je cultive une curiosité pour la conception d'expériences intuitives et interactives. </p>",
+  "presentation": "<p>Enchantée, Maëva</p><p>Fraîchement diplômée d'un Master Expert en Création Numérique Interactive aux Gobelins et forte de 3 ans d'expériences en entreprise, je suis à la recherche d'un poste de <span>développeuse créa & front end</span> dans une agence sur <span>Bruxelles</span>.<br/>Je souhaite contribuer à la conception tout en développant mes compétences en animation web 2D/3D et en nourrissant ma créativité.</p><p>Après un apprentissage chez nother.io, je cultive une curiosité pour la <span>conception d'expériences intuitives et interactives</span>. </p>",
   "technologies": ["React", "Vue", "Tailwind", "GSAP", "Framer Motion", "ThreeJS", "PixiJS"],
   "projects": [
-    {
-      "title": "Les Petites Pousses",
-      "completed": "2023",
-      "for": "Gobelins",
-      "with": "Elise Valloire - Maëlys Tabone - Emma Rutkowski",
-      "opportunity": "2023 - Projet de fin d'études - Gobelins",
-      "content": "Projet de fin détudes. Outil numérique à destination des instituteurs d'école primaire pour apprendre tout en suivant le cycle annuel des saisons à travers la gestion d'un potager. Le projet se concentre sur une histoire interactive comme activité principale. Il comprend également un outil de gestion pour faciliter la répartition des tâches, un système de badges missions attribués aux élèves pour les responsabilisés, et un carnet de bord pour documenter l'activité de la classe dans le jardin.",
-      "technos": "VueJS - Pocketbase - Teachable Machine - Socket.io - Tailwind",
-      "website": ""
-    },
     {
       "title": "Manifeste de la créativité digitale AACC",
       "completed": "2023",
@@ -26,6 +16,16 @@
       "content": "Petites expériences à scanner interactives autour de différentes thématiques.",
       "technos": "WordPress - TensorFlow - R3F - Framer Motion - GSAP",
       "website": "https://manifeste.aacc.fr/"
+    },
+    {
+      "title": "Les Petites Pousses",
+      "completed": "2023",
+      "for": "Gobelins",
+      "with": "Elise Valloire - Maëlys Tabone - Emma Rutkowski",
+      "opportunity": "2023 - Projet de fin d'études - Gobelins",
+      "content": "Projet de fin détudes. Outil numérique à destination des instituteurs d'école primaire pour apprendre tout en suivant le cycle annuel des saisons à travers la gestion d'un potager. Le projet se concentre sur une histoire interactive comme activité principale. Il comprend également un outil de gestion pour faciliter la répartition des tâches, un système de badges missions attribués aux élèves pour les responsabilisés, et un carnet de bord pour documenter l'activité de la classe dans le jardin.",
+      "technos": "VueJS - Pocketbase - Teachable Machine - Socket.io - Tailwind",
+      "website": ""
     },
     {
       "title": "Runner Verfora",
@@ -75,7 +75,7 @@
       "opportunity": "",
       "content": "Digitalisation de leur méthode \"REPERES\". Génération de statistiques.",
       "technos": "Next - Firebase",
-      "website": "https://www.mnstr.com"
+      "website": ""
     },
     {
       "title": "Everide",
@@ -84,19 +84,24 @@
       "with": "nother.io",
       "opportunity": "2021 - Premier projet avec nother.io",
       "content": "Site & Application pour la revente entre particuliers de vêtements et matériels de sport ourtdoor.",
-      "technos": "Nuxt - Tailwind",
+      "technos": "Nuxt - Tailwind - Laravel",
       "website": "https://www.everide.app/fr/"
     }
   ],
   "experiences": [
     {
-      "formation": "Master Expert Création Numérique Interactive",
-      "job": "Developper Front-End @ <a href='www.nother.io'>nother.io</a>",
+      "formation": "Arrivée à 📍 Bruxelles",
+      "job": "A la recherche de mon prochain poste",
+      "date": "Début 2024"
+    },
+    {
+      "formation": "Master Expert Création Numérique Interactive @ Ecole des Gobelins",
+      "job": "Creative & Front-End Developper @ <a href='https://www.nother.io'>nother.io</a>",
       "date": "2023"
     },
     {
-      "formation": "Bachelor Design & Développement Interactif",
-      "job": "Developper Front-End @ protechnologies",
+      "formation": "Bachelor Design & Développement Interactif @ Ecole des Gobelins",
+      "job": "Front-End Developper @ protechnologies",
       "date": "2021"
     }
   ]

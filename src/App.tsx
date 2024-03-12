@@ -22,14 +22,6 @@ function App() {
       <canvas ref={canvas} className='fixed top-0 left-0 w-screen h-screen -z-10' />
       <BigText />
       <Header />
-      {/*
-      <section id="presentation" className='Container grid grid-cols-6 md:grid-cols-12 items-center gap-2 sm:gap-6 auto-rows-min'>
-        <img className='col-span-5 md:col-span-6 md:row-span-2 xl:col-start-2 xl:col-span-5 aspect-square sm:aspect-[9/10] object-[center_70%] object-cover rounded-full'
-          src="/images/maevamezzasalma.jpeg"
-          alt="Portrait de Maëva Mezzasalma réalisé par Romain Quiblier" />
-        <h1 className='font-pilowlava row-start-1 col-span-4 col-start-3 md:col-span-5 md:col-start-8 xl:col-span-4 xl:col-start-8 flex flex-col  text-right'>{jsonData.title}</h1>
-        <div className='col-span-5 col-start-2 md:col-start-8 xl:col-span-4 xl:col-start-8 flex flex-col gap-2 sm:gap-6' dangerouslySetInnerHTML={{ __html: jsonData.presentation }} />
-      </section>*/}
       <section className='Container h-[81vh] sm:h-[75vh] flex items-end'>
         <h1 className='font-pilowlava flex flex-col' dangerouslySetInnerHTML={{ __html: jsonData.title }} />
       </section>
